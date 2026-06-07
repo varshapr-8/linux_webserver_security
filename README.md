@@ -143,7 +143,7 @@ chage -W 14 username
 ![Firewall](03_firewall_rules.png)
 
 ### Users and Groups Created
-![Users](screenshots/04_users_created.png)
+![Users](04_users_created.png)
 
 ### SSH Hardening Applied
 ![SSH](screenshots/05_ssh_hardening.png)
