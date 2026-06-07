@@ -66,7 +66,6 @@ systemctl status httpd
 
 ### Firewall
 \```bash
-
 firewall-cmd --permanent --add-service=http
 
 firewall-cmd --permanent --add-service=https
@@ -89,7 +88,6 @@ chmod 770 /shared/developers
 
 ### SSH Hardening
 \```bash
-
 # /etc/ssh/sshd_config changes
 
 PermitRootLogin no
