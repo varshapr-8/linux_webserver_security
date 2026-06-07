@@ -160,6 +160,6 @@ chage -W 14 username
 
 ## Author
 Varsha P R
-- LinkedIn: linkedin.com/in/varsha-p-r-843980360
+- LinkedIn: www.linkedin.com/in/varsha-p-r-843980360
 - GitHub: github.com/varshapr-8
 - Email: varshapbn8@gmail.com
