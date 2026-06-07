@@ -134,7 +134,7 @@ chage -W 14 username
 ## Screenshots
 
 ### Apache Web Server Running
-![Apache Running](screenshots/01_apache_running.png)
+![Apache Running](01_apache_running.png)
 
 ### Website Live in Browser
 ![Website](screenshots/02_website_browser.png)
