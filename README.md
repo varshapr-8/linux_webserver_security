@@ -149,7 +149,6 @@ chage -W 14 username
 ![SSH](05_ssh_hardening.png)
 
 ### Password Policy Set
-
 ![Password](06_password_policy.png)
 
 ## Tech Stack
