@@ -1,18 +1,45 @@
 # Linux Web Server Setup & Security Hardening
 **Platform:** CentOS Linux | **Tools:** Apache, firewalld, SSH, useradd, chage
 
-## Project Overview
-Deployed and secured a complete Apache web server 
-on CentOS Linux from scratch, implementing 
-industry standard security practices.
+
+## Project Scenario
+
+A company required a secure and 
+production-ready web server configured 
+on CentOS Linux from scratch. As the 
+Linux Administrator I was tasked with:
+
+→ Deploying Apache web server to host 
+  the company website
+
+→ Configuring firewall to allow only 
+  required web traffic
+
+→ Creating department based users and 
+  groups with proper file permissions
+  so each team accesses only their data
+
+→ Hardening SSH to prevent unauthorized 
+  and brute force login attempts
+
+→ Enforcing password expiry policies 
+  across all user accounts
+
+This project demonstrates real world 
+Linux server administration skills 
+that a junior Linux administrator 
+performs during server provisioning 
+and security hardening..
 
 ## What I Built
-A production-ready secured Linux web server with:
-- Running Apache web server with virtual host
-- Department based user access control
-- Hardened SSH configuration
-- Firewall rules for web traffic only
-- Password expiry policies for all users
+
+| Component | Details |
+|---|---|
+| Web Server | Apache on CentOS with virtual host |
+| Firewall | firewalld — HTTP/HTTPS only |
+| Users | 3 departments with role based access |
+| SSH | Hardened with root login disabled |
+| Password | 90 day expiry policy enforced |
 
 ## Tasks Completed
 
@@ -54,59 +81,44 @@ A production-ready secured Linux web server with:
 ## Commands Reference
 
 ### Apache
-\```bash
+```bash
 yum install httpd -y
-
 systemctl start httpd
-
 systemctl enable httpd
-
 systemctl status httpd
-\```
+```
 
 ### Firewall
-\```bash
+```bash
 firewall-cmd --permanent --add-service=http
-
 firewall-cmd --permanent --add-service=https
-
 firewall-cmd --reload
-
 firewall-cmd --list-all
-\```
+```
 
 ### Users and Groups
-\```bash
+```bash
 groupadd developers
-
 useradd -m -G developers john
-
 chown root:developers /shared/developers
-
 chmod 770 /shared/developers
-\```
+```
 
 ### SSH Hardening
-\```bash
+```bash
 # /etc/ssh/sshd_config changes
-
 PermitRootLogin no
-
 MaxAuthTries 3
-
 LoginGraceTime 60
-
 Banner /etc/ssh/banner.txt
-\```
+```
 
 ### Password Policy
-\```bash
+```bash
 chage -M 90 username
-
 chage -d 0 username
-
 chage -W 14 username
-\```
+```
 
 ## Security Improvements
 
@@ -119,7 +131,25 @@ chage -W 14 username
 | Firewall | Open | HTTP/HTTPS only |
 
 ## Screenshots
-(Add your screenshots here)
+## Screenshots
+
+### Apache Web Server Running
+![Apache Running](screenshots/01_apache_running.png)
+
+### Website Live in Browser
+![Website](screenshots/02_website_browser.png)
+
+### Firewall Rules Configured
+![Firewall](screenshots/03_firewall_rules.png)
+
+### Users and Groups Created
+![Users](screenshots/04_users_created.png)
+
+### SSH Hardening Applied
+![SSH](screenshots/05_ssh_hardening.png)
+
+### Password Policy Set
+![Password](screenshots/06_password_policy.png)
 
 ## Tech Stack
 - OS: CentOS Linux
