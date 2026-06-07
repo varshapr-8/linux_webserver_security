@@ -130,14 +130,14 @@ chage -W 14 username
 | Password expiry | Never | 90 days |
 | Firewall | Open | HTTP/HTTPS only |
 
-## Screenshots
+
 ## Screenshots
 
 ### Apache Web Server Running
 ![Apache Running](01_apache_running.png)
 
 ### Website Live in Browser
-![Website](screenshots/02_website_browser.png)
+![Website](02_website_browser.png)
 
 ### Firewall Rules Configured
 ![Firewall](screenshots/03_firewall_rules.png)
