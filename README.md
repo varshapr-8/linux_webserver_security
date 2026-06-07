@@ -56,6 +56,7 @@ A production-ready secured Linux web server with:
 ### Apache
 \```bash
 yum install httpd -y
+
 systemctl start httpd
 systemctl enable httpd
 systemctl status httpd
