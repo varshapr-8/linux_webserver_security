@@ -58,39 +58,55 @@ A production-ready secured Linux web server with:
 yum install httpd -y
 
 systemctl start httpd
+
 systemctl enable httpd
+
 systemctl status httpd
 \```
 
 ### Firewall
 \```bash
+
 firewall-cmd --permanent --add-service=http
+
 firewall-cmd --permanent --add-service=https
+
 firewall-cmd --reload
+
 firewall-cmd --list-all
 \```
 
 ### Users and Groups
 \```bash
 groupadd developers
+
 useradd -m -G developers john
+
 chown root:developers /shared/developers
+
 chmod 770 /shared/developers
 \```
 
 ### SSH Hardening
 \```bash
+
 # /etc/ssh/sshd_config changes
+
 PermitRootLogin no
+
 MaxAuthTries 3
+
 LoginGraceTime 60
+
 Banner /etc/ssh/banner.txt
 \```
 
 ### Password Policy
 \```bash
 chage -M 90 username
+
 chage -d 0 username
+
 chage -W 14 username
 \```
 
