@@ -146,7 +146,7 @@ chage -W 14 username
 ![Users](04_users_created.png)
 
 ### SSH Hardening Applied
-![SSH](screenshots/05_ssh_hardening.png)
+![SSH](05_ssh_hardening.png)
 
 ### Password Policy Set
 ![Password](screenshots/06_password_policy.png)
