@@ -140,7 +140,7 @@ chage -W 14 username
 ![Website](02_website_browser.png)
 
 ### Firewall Rules Configured
-![Firewall](screenshots/03_firewall_rules.png)
+![Firewall](03_firewall_rules.png)
 
 ### Users and Groups Created
 ![Users](screenshots/04_users_created.png)
